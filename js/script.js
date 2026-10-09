@@ -1,9 +1,3 @@
-var animationSpeed = 300;
-
-function formatPrice(price) {
-    return price.toLocaleString("cs-CZ") + " Kč";
-}
-
 document.querySelectorAll(".offer-btn").forEach((button) => {
     button.setAttribute("aria-expanded", "false");
     button.addEventListener("click", () => {

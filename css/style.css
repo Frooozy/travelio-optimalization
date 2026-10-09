@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-a {color: var(--blue);}
+a { color: var(--blue); }
 
 .container {
     max-width: 1200px;
@@ -28,6 +28,7 @@ a {color: var(--blue);}
     padding: 0 20px;
 }
 
+/* Hlavička */
 .header {
     position: sticky;
     top: 0;
@@ -59,8 +60,9 @@ a {color: var(--blue);}
     font-weight: 600;
 }
 
-.nav a:hover { color: var( --blue );}
+.nav a:hover { color: var(--blue); }
 
+/* Hero */
 .hero {
     position: relative;
     height: 600px;
@@ -97,6 +99,7 @@ a {color: var(--blue);}
     margin-bottom: 32px;
 }
 
+/* Tlačítka */
 .btn {
     display: inline-block;
     padding: 14px 32px;
@@ -111,37 +114,40 @@ a {color: var(--blue);}
 }
 
 .btn-primary {
-    background-color:var(--orange);
+    background-color: var(--orange);
     color: #fff;
+    box-shadow: 0 4px 14px rgba(255, 122, 69, .35);
 }
 
-.btn-primary:hover {
-    background-color: var(--orange-dark);
-}
+.btn-primary:hover { background-color: var(--orange-dark); }
 
 .btn-small {
     padding: 8px 20px;
     font-size: 14px;
-    background-color: var( --blue);
-    color: #ffffff;
+    background-color: var(--blue);
+    color: #fff;
 }
 
-.btn-small:hover {
-    background-color: var(--blue-dark);
+.btn-small:hover { background-color: var(--blue-dark); }
+
+/* Úvod */
+.intro { padding: 50px 20px 10px; }
+
+.intro-text {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
 }
 
-.intro {
-    padding: 50px 20px 10px;
-}
-
-.destinations {padding: 50px 20px 80px;}
+/* Destinace */
+.destinations { padding: 50px 20px 80px; }
 
 .section-title {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
-    color: var(--black)
+    color: var(--black);
 }
 
 .cards {
@@ -158,7 +164,7 @@ a {color: var(--blue);}
     transition: transform .2s;
 }
 
-.card:hover {transform: translateY(-5px);}
+.card:hover { transform: translateY(-5px); }
 
 .card-image {
     width: 100%;
@@ -167,12 +173,12 @@ a {color: var(--blue);}
     display: block;
 }
 
-.card-body {padding: 20px;}
+.card-body { padding: 20px; }
 
 .card-body h3 {
     font-size: 22px;
     margin-bottom: 8px;
-    color: #000;
+    color: var(--black);
 }
 
 .card-body p {
@@ -196,7 +202,7 @@ a {color: var(--blue);}
     border-radius: 8px;
 }
 
-.offer.open {display: block;}
+.offer.open { display: block; }
 
 .offer ul {
     padding-left: 18px;
@@ -204,6 +210,7 @@ a {color: var(--blue);}
     font-size: 15px;
 }
 
+/* O nás */
 .about {
     background-color: var(--light);
     padding: 80px 0;
@@ -215,20 +222,15 @@ a {color: var(--blue);}
     align-items: center;
 }
 
-.about-text {flex: 2;}
+.about-text { flex: 2; }
 
 .about-title {
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-.about-title {
     color: var(--black);
 }
 
-.about-text p {
-    margin-bottom: 15px;
-}
+.about-text p { margin-bottom: 15px; }
 
 .about-stats {
     flex: 1;
@@ -242,18 +244,19 @@ a {color: var(--blue);}
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
 }
 
 .stat strong {
     display: block;
     font-size: 30px;
-    color: var(--black);
+    color: var(--blue);
 }
 
-.stat span {color: #666;}
+.stat span { color: #666; }
 
-.contact {padding: 80px 20px;}
+/* Kontakt */
+.contact { padding: 80px 20px; }
 
 .contact-title {
     font-size: 36px;
@@ -270,7 +273,12 @@ a {color: var(--blue);}
 
 address.contact-info { font-style: normal; }
 
-.contact-info p {margin-bottom: 12px;}
+.contact-info p { margin-bottom: 12px; }
+
+.contact-hours {
+    font-size: 14px;
+    color: #777;
+}
 
 .contact-form {
     display: flex;
@@ -298,9 +306,7 @@ address.contact-info { font-style: normal; }
     border-color: var(--blue);
 }
 
-.contact-form .btn {
-    align-self: flex-start;
-}
+.contact-form .btn { align-self: flex-start; }
 
 .form-message {
     margin-top: 15px;
@@ -308,6 +314,7 @@ address.contact-info { font-style: normal; }
     font-weight: 600;
 }
 
+/* Patička */
 .footer {
     background-color: #1d2b36;
     color: #fff;
@@ -327,13 +334,7 @@ address.contact-info { font-style: normal; }
     color: #aaa;
 }
 
-.newsletter-box input {
-    padding: 10px;
-    width: 70%;
-    border: none;
-    border-radius: 6px;
-}
-
+/* Responzivita */
 @media (max-width: 800px) {
     .hero { height: 450px; }
     .hero-title { font-size: 36px; }
